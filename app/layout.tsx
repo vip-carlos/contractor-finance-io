@@ -14,8 +14,15 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Contractor Finance - Construction Accounting & CFO Services",
-  description: "Professional construction finance consulting. Job costing, WIP schedules, and CFO services built by a contractor, for contractors.",
+  title: "Contractor Finance - Construction Accounting & CFO Services by Carlos Ortiz",
+  description: "Professional construction finance consulting. CFO services, controller setup, job costing, WIP schedules, and construction software implementation. Built by a contractor with 8+ years experience.",
+  keywords: "construction accounting, construction CFO, job costing, WIP schedules, construction controller, Procore implementation, Sage 300 construction",
+  openGraph: {
+    title: "Contractor Finance - Construction Accounting That Actually Works",
+    description: "Stop guessing your margins. Get CFO-level financial systems built by someone who ran construction companies for 8+ years.",
+    type: "website",
+    url: "https://contractorfinance.io",
+  }
 };
 
 export default function RootLayout({
@@ -25,6 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
