@@ -1,10 +1,12 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-24 overflow-hidden">
-      {/* Gradient background (subtle) */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary-50 to-white dark:from-neutral-900 dark:to-background -z-10" />
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-24 pt-32 bg-white dark:bg-background">
+      {/* Subtle pattern overlay (optional, very light) */}
+      <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#1f2937_1px,transparent_1px)] [background-size:20px_20px] opacity-30 -z-10" />
 
       {/* Content */}
       <div className="max-w-content mx-auto text-center space-y-8">
@@ -23,15 +25,17 @@ export default function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
           <Button
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
             size="lg"
             className="bg-primary hover:bg-primary-600 dark:bg-primary-dark dark:hover:bg-primary-400 text-white text-lg px-8 py-6 rounded-lg shadow-lg hover:shadow-xl transition-all"
           >
             Book a Free Audit
           </Button>
           <Button
+            onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
             size="lg"
             variant="outline"
-            className="border-2 border-neutral-300 dark:border-neutral-700 text-lg px-8 py-6 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all"
+            className="border-2 border-neutral-300 dark:border-neutral-700 text-lg px-8 py-6 rounded-lg hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-all"
           >
             See How It Works
           </Button>
