@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
@@ -60,6 +61,12 @@ export default function Navbar() {
             >
               Contact
             </button>
+            <Link
+              href="/sign-in"
+              className="text-neutral-700 dark:text-neutral-300 hover:text-primary dark:hover:text-primary-dark font-medium transition-colors"
+            >
+              Client Login
+            </Link>
             <Button
               onClick={() => scrollToSection("contact")}
               className="bg-primary hover:bg-primary-600 dark:bg-primary-dark dark:hover:bg-primary-400 text-white"
