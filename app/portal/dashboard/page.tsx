@@ -55,7 +55,7 @@ export default async function DashboardPage() {
           </CardHeader>
           <CardContent>
             <p className="text-2xl font-bold">12</p>
-            <Link href="/dashboard/documents" className="text-sm text-primary dark:text-primary-dark hover:underline mt-1 inline-block">
+            <Link href="/portal/dashboard/documents" className="text-sm text-primary dark:text-primary-dark hover:underline mt-1 inline-block">
               View all &rarr;
             </Link>
           </CardContent>
@@ -68,7 +68,7 @@ export default async function DashboardPage() {
           </CardHeader>
           <CardContent>
             <p className="text-sm font-medium">January 2026 P&amp;L</p>
-            <Link href="/dashboard/reports" className="text-sm text-primary dark:text-primary-dark hover:underline mt-1 inline-block">
+            <Link href="/portal/dashboard/reports" className="text-sm text-primary dark:text-primary-dark hover:underline mt-1 inline-block">
               View reports &rarr;
             </Link>
           </CardContent>
@@ -83,13 +83,13 @@ export default async function DashboardPage() {
         </CardHeader>
         <CardContent className="flex gap-4">
           <Button asChild className="bg-primary hover:bg-primary-600">
-            <Link href="/dashboard/documents">Upload Documents</Link>
+            <Link href="/portal/dashboard/documents">Upload Documents</Link>
           </Button>
           <Button asChild variant="outline">
-            <Link href="/dashboard/messages">Message Your Accountant</Link>
+            <Link href="/portal/dashboard/messages">Message Your Accountant</Link>
           </Button>
           <Button asChild variant="outline">
-            <Link href="/dashboard/reports">View Financial Reports</Link>
+            <Link href="/portal/dashboard/reports">View Financial Reports</Link>
           </Button>
         </CardContent>
       </Card>

@@ -20,20 +20,20 @@ export default function DashboardLayout({
       <nav className="bg-white dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <Link href="/dashboard" className="text-2xl font-bold">
+            <Link href="/portal/dashboard" className="text-2xl font-bold">
               Contractor Finance
             </Link>
             <div className="flex items-center gap-6">
-              <Link href="/dashboard" className="text-neutral-700 dark:text-neutral-300 hover:text-primary">
+              <Link href="/portal/dashboard" className="text-neutral-700 dark:text-neutral-300 hover:text-primary">
                 Dashboard
               </Link>
-              <Link href="/dashboard/documents" className="text-neutral-700 dark:text-neutral-300 hover:text-primary">
+              <Link href="/portal/dashboard/documents" className="text-neutral-700 dark:text-neutral-300 hover:text-primary">
                 Documents
               </Link>
-              <Link href="/dashboard/reports" className="text-neutral-700 dark:text-neutral-300 hover:text-primary">
+              <Link href="/portal/dashboard/reports" className="text-neutral-700 dark:text-neutral-300 hover:text-primary">
                 Reports
               </Link>
-              <Link href="/dashboard/messages" className="text-neutral-700 dark:text-neutral-300 hover:text-primary">
+              <Link href="/portal/dashboard/messages" className="text-neutral-700 dark:text-neutral-300 hover:text-primary">
                 Messages
               </Link>
               <ClerkUserButton />
