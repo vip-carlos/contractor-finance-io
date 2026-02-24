@@ -24,6 +24,19 @@ const config: Config = {
           800: '#004085',
           900: '#003366',
         },
+        // Signal Blue alias for design system
+        signal: {
+          50: '#e8f4ff',
+          100: '#d4ebff',
+          200: '#b0dcff',
+          300: '#7ac5ff',
+          400: '#3da5ff',
+          500: '#0a84ff',
+          600: '#0066cc',
+          700: '#0052a3',
+          800: '#004085',
+          900: '#003366',
+        },
         // Signal Blue for dark mode (slightly brighter)
         'primary-dark': {
           DEFAULT: '#3da5ff',
@@ -72,7 +85,15 @@ const config: Config = {
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        sm: "6px",
+        card: "10px",
+        btn: "8px",
+        badge: "20px",
+      },
+      boxShadow: {
+        card: "0 2px 8px rgba(0,0,0,0.04)",
+        "card-hover": "0 8px 24px rgba(0,0,0,0.08)",
+        glow: "0 0 8px rgba(10,132,255,0.4)",
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
